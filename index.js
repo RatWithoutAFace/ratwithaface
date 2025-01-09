@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { typewriter, backspaceChars, delay } = require('./typewriter')
 const boxen = require('boxen').default
 const chalk = require('chalk')
