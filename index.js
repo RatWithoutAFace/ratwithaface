@@ -7,14 +7,15 @@ const figlet = require('figlet')
 function card() {
   const data = [
     `${chalk.bold('Website: ')}  ${chalk.cyan('https://rat.codes/')}`,
-    `${chalk.bold('Github:')}    ${chalk.cyan('https://github.com/')}${chalk.yellowBright('RatWithoutAFace')}`,
-    `${chalk.bold('Discord:')}   ${chalk.cyan('https://discord.com/users/')}${chalk.yellowBright('1322361413687316540')}`,
-    `${chalk.bold('Twitter/X:')} ${chalk.cyan('https://twitter.com/')}${chalk.yellowBright('ratwithaface')}`,
+    `${chalk.bold('Github:')}    ${chalk.cyan('https://github.com/RatWithoutAFace')}`,
+    `${chalk.bold('Discord:')}   ${chalk.cyan('https://discord.com/users/1322361413687316540')}`,
+    `${chalk.bold('Twitter/X:')} ${chalk.cyan('https://twitter.com/ratwithaface')}`,
     `${chalk.bold('Email:')}     ${chalk.cyan('face@rat.codes')}`
   ]
   
   const dataString = data.join('\n')
   typewriter(boxen(gradient.retro(figlet.textSync('ratwithaface', { font: 'Slant'} )) + '\n' + dataString , { padding: 2, margin: 1, borderStyle: 'round', borderColor: 'magentaBright', float: 'center' }), 0.1, 40)
+    .then(() => console.log('\n'))
 }
 
 console.clear()
