@@ -1,0 +1,18 @@
+{
+  "name": "ratwithaface",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "ratwithaface",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^4.1.2",
+    "figlet": "^1.8.0",
+    "gradient-string": "^2.0.2"
+  }
+}
